@@ -49,8 +49,6 @@ struct PlaceDetailView : View {
                         .padding(.bottom, 50)
                     
                     ZStack {
-//                        BlurView(style: .light)
-//                            .frame(width: g.size.width, height: 130)
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(self.placeItem?.famousPointsArray ?? [], id: \.id) { item in

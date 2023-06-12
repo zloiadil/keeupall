@@ -16,11 +16,11 @@ struct ARModel {
     init() {
         arView = ARView(frame: .zero, cameraMode: .ar, automaticallyConfigureSession: true)
         
-        guard ARBodyTrackingConfiguration.isSupported else {
+        guard ARWorldTrackingConfiguration.isSupported else {
             fatalError("This feature is only supported on devices with an A12 chip")
         }
         
-        let configuration = ARBodyTrackingConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
         arView.session.run(configuration)
     }
     

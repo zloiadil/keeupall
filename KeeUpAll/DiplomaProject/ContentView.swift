@@ -3,17 +3,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            LinearGradient(
-                gradient: Gradient(
-                    colors: [
-                        Color(red: 0/255, green: 32/255, blue: 95/255),
-                        Color(red: 132/255, green: 53/255, blue: 142/255)
-                    ]
-                ),
-                startPoint: .leading,
-                endPoint: .trailing
-            )
-            .edgesIgnoringSafeArea(.all)
+//            LinearGradient(
+//                gradient: Gradient(
+//                    colors: [
+//                        Color(red: 0/255, green: 32/255, blue: 95/255),
+//                        Color(red: 132/255, green: 53/255, blue: 142/255)
+//                    ]
+//                ),
+//                startPoint: .leading,
+//                endPoint: .trailing
+//            )
+//            .edgesIgnoringSafeArea(.all)
 
             VStack {
                 HStack {
@@ -22,20 +22,27 @@ struct ContentView: View {
                         .frame(width: 100, height: 100)
 //                    Image("logo1")
 //                        .resizable()
-                        
-                    
+
+
                     Text("KeeUpAll")
 //                        .foregroundColor(Color(hex: 0x3A36F1))
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(red: 130/255, green: 100/255, blue: 202/255))
                         .font(.system(size: 36, weight: .bold))
-                    Spacer()
                     
+                    Spacer()
+
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 100)
+                .padding(.leading, 15)
+                .padding(.top, 10)
+//                Image("logo1")
+//                    .resizable()
+//                    .frame(width: 200, height: 80)
                 
                 ActivitiesContentView(activtiesData: Activities(data: ActivitiesMockStore.activityData, items: ActivitiesMockStore.activities))
             }
         }
+        .background(Color("HomeBG"))
     }
 }
 
