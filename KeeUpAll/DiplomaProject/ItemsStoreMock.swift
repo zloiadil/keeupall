@@ -47,7 +47,7 @@ class ActivitiesMockStore {
                     resourceName: "T-Shirt",
                     resourceImage: "kbtu",
                     resourceDescription: "Introducing our stylish and comfortable T-shirt, the epitome of casual fashion with a touch of modern flair. Crafted with utmost care and attention to detail, this T-shirt seamlessly blends contemporary design and superior comfort to create a wardrobe essential that will leave you feeling confident and effortlessly cool.",
-                    resourseModel: "character/body_shirt.usdz"
+                    resourseModel: "character/tshirt-kbtu.usdz"
                 ),
                  ActivityResourcesItem(id: 1, resourceName: "T-Shirt", resourceImage: "tommy2", resourceDescription: "Article"),
                  ActivityResourcesItem(id: 2, resourceName: "T-Shirt", resourceImage: "tommy3", resourceDescription: "Tutorial")]),

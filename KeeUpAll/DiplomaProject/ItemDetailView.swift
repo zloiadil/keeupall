@@ -126,6 +126,8 @@ struct ItemDetailPage: View {
                                     .font(.title2)
                                     .foregroundColor(Color.black.opacity(0.7))
                             }
+                            
+                            Spacer()
                         }
                         
                     }
